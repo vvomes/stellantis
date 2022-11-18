@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: Analog Script Clean PERSONAL Pe;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(49, 211, 49);
+    height: 13vh;
+    font-size: 30px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+main{
+    background: url() no-repeat center center; /*posicionamento nos eixos X e Y*/
+    background-size: cover;
+    height: 92vh ;
+}
+
+.nav-list { /*se refere a ul*/
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+
+/*
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+#logo1{
+    position: absolute;
+    width: 185px;
+    height: 95px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    background-color: #50CA0C;
+    justify-content: flex-end;
+    align-items: center;  
+}
+    
+#menu{
+    list-style: none;
+    padding: 0;
+    background-color: #50CA0C;
+    font-size: 25px;
+    position: absolute;
+    width: 980px;
+    height: 45px;
+    
+}
+
+#menu  li{
+    display: inline;
+    
+    justify-content: flex-end;
+} 
+
+
+
+#menu  li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 40px;
+    display: inline-block;
+    transition: background.6s;
+}    
+
+#menu  li a:hover{
+    background-color: #b7ffdbe8;
+}
+*/
