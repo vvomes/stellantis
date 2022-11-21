@@ -29,7 +29,9 @@ footer li a {
 	top: 807px;
 }
 
-
+.card-image {
+	border: 5px solid rgb(62, 211, 62);
+}
 
 .appDownload {
 	height: 40px
