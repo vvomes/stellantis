@@ -27,13 +27,39 @@ footer li a {
 .blob {
 	opacity: 70%;
 	z-index: -1;
-	left: 370px;
-	top: 807px;
+	left: -146px;
+	top: 1226px;
+}
+
+.highlight-container,
+.highlight {
+	position: relative;
+}
+
+.highlight-container {
+	display: inline-block;
+}
+
+.highlight-container:before {
+	content: " ";
+	display: block;
+	height: 90%;
+	width: 44%;
+	margin-left: -3px;
+	margin-right: -3px;
+	position: absolute;
+	background: rgb(62, 211, 62);
+	transform: rotate(2deg);
+	top: -1px;
+	left: -1px;
+	border-radius: 20% 25% 20% 24%;
+	padding: 10px 3px 3px 10px;
 }
 
 .card-image {
 	border: 5px solid rgb(62, 211, 62);
 }
+
 
 .appDownload {
 	height: 40px
