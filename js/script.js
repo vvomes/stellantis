@@ -10,6 +10,6 @@ function contatar() {
 	if (document.getElementById('message').value == '')
 		return alert('Por favor insira uma mensagem')
 
-	alert('Mensagem enviada com sucesso. Obrgiado por entrar em contato conosco')
+	alert('Mensagem enviada com sucesso. Obrgiado por entrar em contato conosco!')
 
 }
