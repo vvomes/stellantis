@@ -1,5 +1,6 @@
 nav,
-footer {
+footer,
+#enviarButton {
 	background-color: rgb(62, 211, 62);
 }
 
@@ -35,4 +36,8 @@ footer li a {
 
 .appDownload {
 	height: 40px
+}
+
+.contatoDiv {
+	background-color: rgb(246, 246, 246);
 }
