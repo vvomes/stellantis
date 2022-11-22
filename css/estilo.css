@@ -15,7 +15,8 @@ a img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
 	font-family: 'Heebo', sans-serif;
 }
 
@@ -38,6 +39,7 @@ footer li a {
 	height: 40px
 }
 
-.contatoDiv {
+.contatoDiv,
+.Divsobrenos {
 	background-color: rgb(246, 246, 246);
 }
