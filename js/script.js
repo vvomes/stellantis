@@ -38,11 +38,187 @@ window.onload = function(e) {
 		},
 		options: {
 			plugins: {
-				subtitle: {
+				title: {
 					display: true,
-					text: 'Custom Chart Subtitle'
+					text: 'Nascimentos, Óbitos e Crescimento Vegetativo no Brasil - julho 2020 a junho 2021'
 				},
 			}
 		}
 	});
+
+	var ctx = document.getElementById("barChart2").getContext('2d');
+	var barchart2 = new Chart(ctx, {
+		"type": "line",
+		"data": {
+			"labels": [
+				"2006",
+				"2007",
+				"2008",
+				"2009",
+				"2010",
+				"2011",
+				"2012",
+				"2013",
+				"2014",
+				"2015",
+				"2016",
+				"2017",
+				"2018",
+				"2019",
+				"2020",
+				"2021"
+			],
+			"datasets": [
+				{
+					"data": [
+						"10294811",
+						"11014104",
+						"11753856",
+						"12536177",
+						"13334875",
+						"14108047",
+						"14880771",
+						"15643415",
+						"16319980",
+						"16834630",
+						"17247124",
+						"17719258",
+						"18230138",
+						"18753364",
+						"19089286",
+						"19305526"
+					],
+					"label": "São Paulo",
+					"posicao": 0,
+					"item": null,
+					"fill": false,
+					"borderColor": "#6BC9C7",
+					"pointBackgroundColor": "#6BC9C7",
+					"pointBorderColor": "#6BC9C7"
+				}
+			]
+		},
+		"options": {
+			"legend": {
+				"display": false,
+				"position": "top"
+			},
+			"tooltips": {
+				"enabled": true,
+				"mode": "label",
+				"callbacks": {}
+			},
+			"hover": {
+				"mode": "label"
+			},
+			"scales": {
+				"yAxes": [
+					{
+						"stacked": false,
+						"ticks": {
+							"beginAtZero": true
+						}
+					}
+				],
+
+				"xAxes": [
+					{
+						"stacked": false,
+						"ticks": {
+							"autoSkip": true,
+							"maxTicksLimit": 10
+						}
+					}
+				],
+
+			}
+		}
+	})
+
+	var ctx = document.getElementById("barChart3").getContext('2d');
+	var barchart3 = new Chart(ctx, {
+		"type": "line",
+		"data": {
+			"labels": [
+				"2006",
+				"2007",
+				"2008",
+				"2009",
+				"2010",
+				"2011",
+				"2012",
+				"2013",
+				"2014",
+				"2015",
+				"2016",
+				"2017",
+				"2018",
+				"2019",
+				"2020",
+				"2021"
+			],
+			"datasets": [
+				{
+					"data": [
+						"102322",
+						"109745",
+						"117235",
+						"121105",
+						"126880",
+						"134659",
+						"140654",
+						"145166",
+						"150518",
+						"153113",
+						"155317",
+						"156750",
+						"159712",
+						"164507",
+						"167544",
+						"168738"
+					],
+					"label": "São Paulo",
+					"posicao": 0,
+					"item": null,
+					"fill": false,
+					"borderColor": "#6BC9C7",
+					"pointBackgroundColor": "#6BC9C7",
+					"pointBorderColor": "#6BC9C7"
+				}
+			]
+		},
+		"options": {
+			"legend": {
+				"display": false,
+				"position": "top"
+			},
+			"tooltips": {
+				"enabled": true,
+				"mode": "label",
+				"callbacks": {}
+			},
+			"hover": {
+				"mode": "label"
+			},
+			"scales": {
+				"yAxes": [
+					{
+						"stacked": false,
+						"ticks": {
+							"beginAtZero": true
+						}
+					}
+				],
+				"xAxes": [
+					{
+						"stacked": false,
+						"ticks": {
+							"autoSkip": true,
+							"maxTicksLimit": 10
+						}
+					}
+				]
+			}
+		}
+	})
 }
