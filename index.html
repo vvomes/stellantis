@@ -8,6 +8,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet">
@@ -162,6 +165,9 @@
 							responderá no seu e-mail em breve.</p>
 					</div>
 					<div class="col-7 px-5">
+						<i class="fa-solid fa-x fa-xl mb-4 text-danger" style="display: none;" id="invalidatedIcon"></i>
+						<i class="fa-solid fa-check fa-xl mb-4 text-success" style="display: none;"
+							id="validatedIcon"></i>
 						<div class="form-group">
 							<label class="form-label" for="name">Nome:</label>
 							<input type="text" class="form-control" id="name">
@@ -175,8 +181,14 @@
 							<label class="form-label mt-2" for="textAreaExample">Message:</label>
 							<textarea class="form-control" id="message" rows="4"></textarea>
 
-							<input type="submit" id="enviarButton" onclick="contatar()"
-								class="btn mt-3 btn-open align-items-right" value="Enviar">
+							<div class="row">
+								<div class="col">
+									<input type="submit" id="enviarButton" onclick="contatar()"
+										class="btn mt-3 btn-open align-items-right" value="Enviar" />
+								</div>
+							</div>
+
+
 						</div>
 					</div>
 				</div>

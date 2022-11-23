@@ -1,18 +1,35 @@
 function contatar() {
-	if (document.getElementById('name').value == '')
-		return alert('Por favor, insira um nome')
+	document.getElementById("validatedIcon").style.display = "none"
+	document.getElementById("invalidatedIcon").style.display = "none"
 
-	if (document.getElementById('email').value == '' && document.getElementById('phoneNumber').value == '')
-		return alert('Por favor, insira um e-mail ou número de telefone')
-
-	if (document.getElementById('message').value == '')
-		return alert('Por favor insira uma mensagem')
-
-	alert('Mensagem enviada com sucesso. Obrgiado por entrar em contato conosco!')
-
+	if (validateForm()) {
+		document.getElementById("validatedIcon").style.display = "block"
+		alert('Mensagem enviada com sucesso. Obrgiado por entrar em contato conosco!')
+	} else {
+		document.getElementById("invalidatedIcon").style.display = "block"
+	}
 }
 
-//Caro avaliador, eu não dei cntrl + c e cntrl + v nessa função. Foi criada cuidadosamente por mim,
+function validateForm() {
+	var validated = true
+	if (document.getElementById('name').value == '') {
+		alert('Por favor, insira um nome')
+		return validated = false
+	}
+
+	if (document.getElementById('email').value == '' && document.getElementById('phoneNumber').value == '') {
+		alert('Por favor, insira um e-mail ou número de telefone')
+		return validated = false
+	}
+
+	if (document.getElementById('message').value == '') {
+		alert('Por favor insira uma mensagem')
+		return validated = false
+	}
+	return validated
+}
+
+//Caro avaliador, eu não dei cntrl + c e cntrl + v nesses charts. Foram criados cuidadosamente por mim,
 //e seus dados foram adaptados a partir da fonte oficial.
 //Favor dar extra pontos pelo esforço ❤️
 window.onload = function(e) {
