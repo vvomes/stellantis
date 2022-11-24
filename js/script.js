@@ -37,27 +37,18 @@ window.onload = function(e) {
 	var barChart = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: ["Projeção do IBGE", "Portal do Registro Civil"],
+			labels: ["2010", "2021"],
 			datasets: [{
-				label: 'Nascimentos',
-				data: [2940629, 2643339],
+				label: 'Número Populacional',
+				data: [41262199, 46649132],
 				backgroundColor: "blue"
-			}, {
-				label: 'Óbitos',
-				data: [1410602, 1737119],
-				backgroundColor: "red"
-			},
-			{
-				label: 'Vegetativo',
-				data: [1530027, 906220],
-				backgroundColor: "green"
-			}]
+			},]
 		},
 		options: {
 			plugins: {
 				title: {
 					display: true,
-					text: 'Nascimentos, Óbitos e Crescimento Vegetativo no Brasil - julho 2020 a junho 2021'
+					text: 'Estado São Paulo - Gráfico Populacional'
 				},
 			}
 		}
